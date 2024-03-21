@@ -20,7 +20,7 @@ function PaginationTest() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage
   const currentListOfItems = dummyData.slice(indexOfFirstItem, indexOfLastItem)
 
-  console.log(indexOfFirstItem, indexOfLastItem, currentListOfItems);
+  //console.log(indexOfFirstItem, indexOfLastItem, currentListOfItems);
 
   return (
     <div>
