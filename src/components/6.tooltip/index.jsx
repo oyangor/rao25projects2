@@ -4,7 +4,7 @@ function Tooltip({ children, content, delay }) {
   const [isVisible, setIsVisible] = useState(false)
   return (
     <div
-      className=' relative inline-block'
+      className=' relative inline-block mt-4'
       onMouseEnter={() => setTimeout(() => { setIsVisible(true) }, delay || 50)}
       onMouseLeave={() => setTimeout(() => { setIsVisible(false) }, 50)}
     >
