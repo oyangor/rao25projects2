@@ -17,7 +17,7 @@ function RandomQuoteGenerator() {
 
       if (result && result.length > 0) {
         setLoading(false)
-        setQuote(result)
+        setQuote(result[0])
       }
 
     } catch (e) {
@@ -31,15 +31,23 @@ function RandomQuoteGenerator() {
     fetchQoute()
   }, [])
 
-  console.log(quote);
+  if (error) {
+    return <h3>There was an error while fetching data</h3>
+  }
+
+  // console.log(quote);
 
   return (
-    <div className='mt-10'>
+    <div className='mt-10 mx-auto'>
       <h2 className='mb-2'>RandomQuoteGenerator</h2>
       {
         loading
-          ?
-        :
+          ? <h3>Loading please wait...</h3>
+          : <div >
+            <p className='text-[20px]'> <span className='font-bold' >Author: </span><span className=' italic'>{quote?.author}</span></p>
+            <p className='text-[20px]'><span className=' font-bold'>Quote:</span> <span className=' italic'>{quote?.content}</span></p>
+            <button onClick={() => fetchQoute()}>Refresh</button>
+          </div>
       }
     </div>
   )
