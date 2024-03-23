@@ -3,7 +3,7 @@ import Tooltip from '.'
 
 function ToolTipTest() {
   return (
-    <div className='mt-10 mx-auto'>
+    <div className='mt-10 mx-auto flex justify-center items-center mb-[30px] flex-col '>
       <h2 className='mb-2'>ToolTip</h2>
       <Tooltip delay={1000} content={'Tooltip Content'} children={<p className=' font-bold bg-slate-300 '>Hover Me</p>} />
     </div>

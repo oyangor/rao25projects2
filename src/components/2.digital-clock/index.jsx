@@ -14,7 +14,7 @@ function DigitalClock() {
     }
   }, [])
   return (
-    <div className=' mt-10'>
+    <div className=' mt-10 flex justify-center items-center mb-[30px] flex-col'>
       <h2>DigitalClock</h2>
       <div className='border border-blue-950 inline-block mt-3'>
         <div className='time text-[30px] text-[#61dafb] mt-7 '>

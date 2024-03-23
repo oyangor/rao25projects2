@@ -23,7 +23,7 @@ function PaginationTest() {
   //console.log(indexOfFirstItem, indexOfLastItem, currentListOfItems);
 
   return (
-    <div>
+    <div className='flex justify-center items-center mb-[30px] flex-col mt-10'>
       <h2>Pagination</h2>
       <ul className='flex mt-10 justify-between items-center mb-10 gap-2 h-5'>
         {

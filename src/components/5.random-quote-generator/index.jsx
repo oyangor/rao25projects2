@@ -38,7 +38,7 @@ function RandomQuoteGenerator() {
   // console.log(quote);
 
   return (
-    <div className='mt-10 mx-auto'>
+    <div className='mt-10 mx-auto flex justify-center items-center mb-[30px] flex-col '>
       <h2 className='mb-2'>RandomQuoteGenerator</h2>
       {
         loading

@@ -14,7 +14,7 @@ function StepProgressBar({ steps, activeStep, setActiveStep }) {
   // console.log(calculateCurrentStepWidth());
 
   return (
-    <div>
+    <div className=' w-full '>
       <div className='steps flex justify-between items-center m-auto bg-[#f0f0f0] rounded-[8px] p-[10px] '>
         {
           steps && steps.length > 0
@@ -22,7 +22,7 @@ function StepProgressBar({ steps, activeStep, setActiveStep }) {
             : null
         }
       </div>
-      <div className="btns-wrapper">
+      <div className="btns-wrapper flex justify-center items-center">
         <button onClick={handlePrevStep} disabled={activeStep === 0} className={`${activeStep === 0 ? ' opacity-[0.65] cursor-not-allowed' : ''}`}>Prev Step</button>
         <button onClick={handleNextStep} disabled={activeStep === steps.length - 1} className={`${activeStep === steps.length - 1 ? ' opacity-[0.65] cursor-not-allowed' : ''}`}>Next Step</button>
       </div>

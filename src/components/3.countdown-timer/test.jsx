@@ -20,7 +20,7 @@ function CountDownTimerTest() {
   }
 
   return (
-    <div className='mt-10'>
+    <div className='mt-10 flex justify-center items-center mb-[30px] flex-col'>
       <h2>CountDownTimer</h2>
       <input
         type="number"
