@@ -35,6 +35,7 @@ function CurrencyConverter() {
             <option value="USD">USD</option>
             <option value={'INR'}>INR</option>
             <option value={'EUR'}>EUR</option>
+            <option value={'AUD'}>AUD</option>
           </select>
         </div>
         <p>To</p>
